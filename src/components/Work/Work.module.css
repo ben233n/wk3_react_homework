@@ -1,0 +1,43 @@
+.bg{
+    width: calc((100% - 30px*2)/3);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:24px ;
+    transition: all 0.3s ease;
+}
+
+.img{
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.p{
+    margin: 24px;
+    font-weight: 350;
+    font-size: 1.25rem;
+    color: #797979;
+}
+
+
+@media (max-width: 992px) {
+    .bg{
+        width: calc((100% - 30px )/2);
+        height: auto;
+    }
+
+}
+  /* 手機 */
+@media (max-width: 576px) {
+    .bg{
+        width: 100%;
+        height: auto;
+    }
+    .p{
+        font-size: 1.1rem;
+    }
+
+
+}

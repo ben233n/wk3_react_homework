@@ -1,0 +1,49 @@
+.bg_up{
+    width: 100%;
+    height: auto;
+    padding: 32px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.up_h2{
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #545858;
+    margin-bottom: 12px;
+}
+.up_p{
+    font-weight: 250;
+    font-size: 1.25rem;
+    color: #797979;
+}
+
+
+
+
+.container{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 992px) {
+    
+
+}
+  /* 手機 */
+@media (max-width: 576px) {
+    .up_h2{
+        font-weight: 300;
+        font-size: 1.714rem;
+        color: #545858;
+        margin-bottom: 12px;
+    }
+    .up_p{
+        font-weight: 250;
+        font-size: 1rem;
+        color: #797979;
+    }
+}

@@ -1,0 +1,143 @@
+.bg_up{
+    width: 100%;
+    height: auto;
+    padding: 32px 0px;
+    background-color: #9FA69E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.up_h2{
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #f5f5f5;
+    margin-bottom: 12px;
+}
+.up_p{
+    font-weight: 200;
+    font-size: 1.25rem;
+    color: #f5f5f5;
+}
+.down{
+    width: 100%;
+    height: auto;
+    padding: 32px 0px;
+    background-color: #606861;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+.arrow{
+    position: relative;
+    height: 64px;
+    margin: 0px 24px;
+    z-index: 5;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.arrow:hover{
+    transform: scaleX(1.2);
+}
+
+
+.container{
+    width: 1170px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+
+}
+
+
+@media (max-width: 992px) {
+    .container > :nth-child(1){
+        transform: translateX(-100px);
+        pointer-events: none;  /* 禁止點擊 */
+        user-select: none;     /* 禁止文字選取 */
+    }
+    .container > :nth-child(2){
+        transform:scale(1.3);
+        margin: 80px 0px;
+    }
+
+    .container > :nth-child(3) {
+        transform: translateX(100px);
+        pointer-events: none;  /* 禁止點擊 */
+        user-select: none;     /* 禁止文字選取 */
+    }
+    .container{
+        width: 100%;
+        max-width: 800px;
+        flex: 1.4; /* 第二個變大 */
+    }
+    .down::after{
+        content: "";
+        position: absolute;
+        background: linear-gradient(to right,#606861 ,#60686173,#60686100,#60686173,#606861);
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        pointer-events: none;
+    }
+
+
+}
+  /* 手機 */
+@media (max-width: 700px) {
+    .up_h2{
+        font-size: 1.714rem;
+    }
+    .up_p{
+        font-size: 1rem;
+    }
+    .down::after{
+        background: linear-gradient(to right,#606861 ,#60686173,#60686100,#60686100,#60686100,#60686100,#60686100,#60686100,#60686100,#60686173,#606861);
+    }
+    .container{
+        display:flex;
+        justify-content: center;
+    }
+    .container > :nth-child(1){
+        display: none;
+    }
+    .container > :nth-child(2){
+        transform:scale(1);
+        margin: 0px;
+    }
+
+    .container > :nth-child(3) {
+        display: none;
+    }
+    .arrow{
+        position: absolute;
+        height: 64px;
+        margin: 0px 0px;
+        z-index: 5;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .arrow{
+        position: absolute;
+        height: 64px;
+        margin: 0px 0px;
+        z-index: 5;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .arrow:nth-of-type(1) {
+        left: 0;
+      }
+    .arrow:nth-of-type(2) {
+      right: 0;
+    }
+
+}

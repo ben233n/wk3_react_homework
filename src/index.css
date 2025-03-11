@@ -1,0 +1,18 @@
+html{
+  box-sizing: border-box;
+  font-size: 18px;
+  background-color: #F5F5F5;
+  background: url(../public/背景紋路.png);
+}
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: "Noto Sans TC", serif;
+  font-optical-sizing: auto;
+}
